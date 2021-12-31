@@ -1,0 +1,233 @@
+.trip-content {
+    width: 100%;
+/*    height: 100%;*/
+    display: flex;
+    margin: 32px 0px;
+    
+}
+
+.trip-content-left {
+    width: 65%;
+    margin-right: 16px;
+}
+
+.trip-content-right {
+    float: right;
+    width: 35%;
+    margin-left: 24px;
+    box-shadow: 1px 1px  6px rgb(0 0 0 / 25%);
+/*    box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 25%);*/
+    font-weight: 600;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.booking-detail {
+    margin: auto;
+    padding: 20px;
+    height: 56px;
+    background-color: red;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.passenger-info {
+    min-height: 40px;
+    height: auto;
+}
+
+.passenger-info-in {
+    background-color: #f1f1f1;
+    margin: 12px 16px 0px;
+    padding: 12px 16px;
+    border-top-left-radius:  5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ti-arrow-circle-down {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fa-edit {
+    cursor: pointer;
+}
+
+.passenger-detail-parrent {
+    display: none;
+    background-color: #fff;
+    margin: -2px 16px 12px;
+    box-shadow: 1px 1px  2px rgb(0 0 0 / 25%);
+    padding: 8px 16px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    scroll-behavior: smooth;
+}
+
+
+
+.passenger-detail-child {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.trip {
+    margin: 16px auto 0;
+    padding: 12px 16px;
+    background-color: #c9efff;
+    height: 44px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.trip-all-info {
+    min-height: 100px;
+    height: auto;
+    margin: auto;
+}
+
+.trip-place-time {
+    height: 45px;
+    margin: 4px 16px;
+}
+
+.trip-place {
+
+    line-height: 1.6;
+}
+
+.trip-time {
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.trip-time-child {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.trip-price {
+    margin: 4px 16px;
+    background-color: #f1f1f1;
+    height: 40px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.trip-service {
+    margin: 12px 16px 0px;
+    background-color: #f1f1f1;
+    height: 40px;
+    padding: 12px 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip-seat-parent {
+    min-height: 40px;
+    height: auto;
+}
+
+.trip-seat-child {
+    background-color: #f1f1f1;
+    margin: 12px 16px;
+    padding: 12px 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.trip-seat-detail-parrent {
+    display: none;
+    background-color: #fff;
+    margin: -2px 16px 12px;
+    box-shadow: 1px 1px  2px rgb(0 0 0 / 25%);
+    padding: 8px 16px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    scroll-behavior: smooth;
+}
+
+.trip-seat-detail-child {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6;
+    text-transform: lowercase;
+  
+}
+
+.trip-total-price {
+    height: 50px;
+    background-color: #168fb0;
+    padding: 16px 16px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-seat {
+    display: inline-block;
+}
+
+.seat-service-edit {
+    display: inline-block;
+    margin-left: 8px;
+    padding-top: 2px;
+}
+
+.ticket-price-passenger {
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.trip-service-parent {
+    min-height: 40px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.service-detail-parrent {
+    display: none;
+    background-color: #fff;
+    margin: -2px 16px 12px;
+    box-shadow: 1px 1px  2px rgb(0 0 0 / 25%);
+    padding: 8px 16px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    scroll-behavior: smooth;
+}
+
+.service-detail-child {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6;
+    text-transform: lowercase;
+}
+
+.icon-down-service {
+    cursor: pointer;
+}
+
+.open {
+    display: block;
+}
+
+.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+
+

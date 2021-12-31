@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 2, 2021, 7:47:18 AM
+    Author     : ADMIN
+*/
+.form-flight {
+    background-image:linear-gradient(
+        30.3deg, rgba(217, 26, 33, 0.73) 33.94%, #6F0000 163.23%); 
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+} 
+
+.form-radio {
+    padding: 16px 0;
+    color: #fff;
+}
+
+input[type='radio'] { 
+    transform: scale(1.5); 
+}
+
+.radio-trip {
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.order-ticket {
+    background: linear-gradient(
+        26.73deg, #F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
+    color: #000!important;
+}
+
+.form-message {
+    color: yellow !important;
+    font-size: 14px !important;
+}

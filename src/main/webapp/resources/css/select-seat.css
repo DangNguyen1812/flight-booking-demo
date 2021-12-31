@@ -1,0 +1,431 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 24, 2021, 4:07:56 PM
+    Author     : ADMIN
+*/
+
+
+.trip-info {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: KoHo, sans-serif;
+    color: #ff6600;
+    padding: 16px 0px;
+}
+
+.content {
+    min-height: 800px;
+    height: auto;
+    overflow: hidden;
+}
+
+.select {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.select-seat, .select-service {
+    width: 90%;
+    height: 120px;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: KoHo, sans-serif;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    margin: 0px 8px 24px;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+}
+
+.select-seat-left, .select-service-left {
+    flex-grow: 2;
+}
+
+.select-seat-right, .select-service-right {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.select-seat-departure {
+    padding-top: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0d1;
+    font-size: 22px;
+}
+
+.select-seat-position, .select-service-type {
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.body-aircraft-modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display:none;
+    /*    align-items: center;*/
+    justify-content: flex-end;
+
+}
+
+.body-aircraft-modal.open {
+    display: flex;
+}
+
+.modal-container {
+    position: fixed;
+    background: #fff;
+    width: 800px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    animation: modalFadeIn ease 0.5s;
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0.2;
+        transform: translateY(-150px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.aircraft-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.trip-name {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+    text-align: center;
+    padding: 0px ;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: KoHo ,sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #ff6600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip-name-child {
+    flex-grow: 1;
+    padding: 12px 0px;
+    border: 1px solid black;
+    height: 50px;
+    width: 391.5px;
+    cursor: pointer;
+}
+
+.trip-name-child:hover {
+    background-color: #f1f1f1;
+}
+
+.passenger-seat-name {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.passenger-name {
+    display: inline-block; 
+    white-space: nowrap;
+    flex-grow: 1;
+    margin: 0 16px;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+}
+
+.passenger-name-detail {
+    background-color: #ff6600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    font-family: KoHo, sans-serif;
+}
+
+.passenger-seat {
+    height: 36px;
+    background-color: white;
+    font-family: KoHo,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 8px 8px;
+    text-align: center;
+}
+
+.aircraft-row {
+    clear: both;
+    /*    color: #00ff00;*/
+    width: 100%;
+    height: 32px;
+    padding: 4px 4px;
+    text-align: right;
+    margin: 8px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+
+}
+
+.aircraft-row-sticky {
+    position: sticky;
+    z-index: 999;
+    top: 150px;
+    background-color: white;
+    margin-top: 0;
+}
+
+.aircraft-iden-position {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: KoHo, sans-serif;
+    color: black;
+}
+
+
+
+.aircraft-row-body {
+    min-height: 1300px;
+    height: auto;
+    display: flex;
+
+}
+
+.aircraft-row-body-left {
+    flex-grow: 2;
+}
+
+.aircraft-row-body-right {
+    width: auto;
+    border-left: 1px solid black;
+    flex-grow: 1;
+}
+
+.aircraft-row-sticky-right {
+    position: sticky;
+    z-index: 999;
+    top: 160px;
+    background-color: white;
+    margin-top: 0;
+}
+
+.info-type-seat {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 8px;
+    line-height: 1.6;
+    margin: 8px 8px;
+}
+
+.box {
+    height: 24px;
+    width: 24px;
+    margin-top: 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.box-color-grey{
+    background-color: #d1d3d4;
+}
+
+.box-color-blue {
+    background-color: blue;
+}
+
+.box-color-red{
+    background-color:  #ff0000;
+}
+
+.box-color-green{
+    background-color: #00ff00;
+}
+
+.box-color-yellow{
+    background-color: #ffff66;
+}
+
+.notice-name {
+    /*    display: inline-block;*/
+}
+
+.reserved {
+    color:  #d1d3d4 !important;
+    pointer-events: none;
+}
+
+/*.processing {
+    color:#ffff66 !important;
+}*/
+
+.seat-name {
+    box-sizing: border-box;
+    /*    padding: 8px 4px;*/
+    width: 43px;
+    text-align: center;
+    /*
+    height: 43px;*/
+
+}
+
+.icon-chair {
+    font-size: 32px;
+}
+
+.icon-chair:hover {
+    box-sizing: border-box;
+
+}
+
+.seat-all {
+    position: relative;
+    cursor: pointer;
+    padding: 4px;
+
+}
+.seat-all:hover {
+    opacity: 1;
+
+}
+
+.show-info-seat {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    top: -54px;
+    width: 80px;
+    height: 48px;
+    color: #000;
+    background-color: white;
+    box-shadow: 1px 5px 5px #d1d3d4;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+    padding-top: 14px;
+}
+
+.seat-all:hover > div {
+    display: block;
+}
+
+
+
+.economy {
+    color: #00ff00;
+}
+
+.first_class {
+    color: red;
+}
+
+.business {
+    color: blue;
+}
+
+.aircraft-footer {
+    display: inline-block;
+    position: sticky;
+    z-index: 999999;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ff471a;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: KoHo,sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+
+.seat-confirm {
+    display: inline-block;
+    float: left;
+    padding: 8px 16px;
+    margin: 0px 16px;
+}
+
+.button-confirm {
+    display: inline-block;
+    float: right;
+    margin: 12px 16px;
+}
+
+.button-confirm :hover {
+    background-color: #99ff66;
+}
+
+.button-confirm button {
+    padding: 12px 32px;
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;       
+}
+
+.btn-go-on {
+    padding: 12px 32px;
+    border-radius: 5px;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.go-on {
+    text-align: center;
+}
+
+
+.seat-id-db {
+    display:none;
+}
+
+.active {
+    background-color: greenyellow;
+}
+
+
+.selecting-seat {
+    color: #ffff66;
+    pointer-events: none;
+}
+
+.pink {
+    color: pink !important;
+}
+

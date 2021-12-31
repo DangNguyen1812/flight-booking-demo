@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 28, 2021, 8:19:25 AM
+    Author     : ADMIN
+*/
+.passenger-head {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: KoHo,sans-serif;
+    padding: 8px 20px;
+
+}
+
+.passenger-form {
+    width: 100%;
+    margin: 0px 0px 48px 16px;;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+    border-radius: 4px;
+}
+
+.passenger-form-header {
+    height: 50px;
+    font-size: 18px;
+    font-family: KoHo, sans-serif;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.input-bottom-line {
+    outline: none;
+    border-width: 0 0 1px;
+    border-color: black;
+    margin:8px 0px;
+}
+
+.input-bottom-line:hover {
+    border-color: blue;
+} 
+
+.btn-go-on {
+    padding: 8px 32px;
+    background: linear-gradient(
+        26.73deg, #F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
+    font-size: 16px;
+    font-family: KoHo, sans-serif;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-save-info {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.is-required {
+    margin-left: 8px !important;
+    color: red !important;
+    font-size: 14px !important;
+}
