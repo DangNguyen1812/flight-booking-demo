@@ -28,6 +28,7 @@ public class JPAConfig {
     public DataSource dataSource() {
         final DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        
         dataSource.setUrl("jdbc:mysql://b6a97f0d9de6f7:21154445@us-cdbr-east-05.cleardb.net/heroku_cdccc17b6cda5e3?reconnect=true");
         dataSource.setUsername("b6a97f0d9de6f7");
         dataSource.setPassword("21154445");
