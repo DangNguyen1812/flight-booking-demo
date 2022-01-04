@@ -80,7 +80,7 @@ public class BookingRoundController {
     @Autowired
     private JavaMailSender mailSender;
 
-    @RequestMapping("/bookingDetail")
+    @RequestMapping("/bookingDetail123")
     public String bookingDetailRoundTrip(Model model,
             @RequestParam("flightGoId") String flightGoId,
             @RequestParam("flightReturnId") String flightReturnId,
