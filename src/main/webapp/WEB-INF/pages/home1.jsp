@@ -143,7 +143,7 @@
         </div>
         <script type="text/javascript" src="<c:url value="/resources/js/validate_form.js"/>"></script>
         <script type="text/javascript" src="<c:url value="/resources/js/homefetch.js"/>"></script>
-        <script language="javascript">
+<!--        <script language="javascript">
                                         var today = new Date();
                                         var dd = String(today.getDate()).padStart(2, '0');
                                         var mm = String(today.getMonth() + 1).padStart(2, '0');
@@ -152,7 +152,7 @@
                                         today = yyyy + '-' + mm + '-' + dd;
                                         $('#departDate1').attr('min', today);
                                         $('#returnDate1').attr('min', today);
-        </script>
+        </script>-->
         <script >
                     Validator({
                         form: '#form-search',
