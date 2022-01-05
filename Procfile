@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.mycompany.Spring_MVC_Project_Final
+web: java java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port$PORT target/Spring_MVC_Project_Final.war
